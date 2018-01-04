@@ -59,17 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
                     startActivity(intent);
                 }
-               /* if(ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
-                    Toast.makeText(MainActivity.this,"no hay permiso",Toast.LENGTH_LONG).show();
-                    requestPermision();
-                }else {
-                    startActivity(intent);
-                }*/
             }
         });
-    }
-
-    public void requestPermision(){
-        ActivityCompat.requestPermissions(MainActivity.this,new String[]{Manifest.permission.CALL_PHONE},1);
     }
 }

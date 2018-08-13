@@ -9,9 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Toast;
-
-import cn.pedant.SweetAlert.SweetAlertDialog;
+import com.cazaea.sweetalert.SweetAlertDialog;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                                  .setTitleText("prro Atencion!")
                                  .setContentText("Debes otorgar los permisos de llamada si quieres llamar ")
                                  .setConfirmText("Permitir")
-                                 .setCancelText("Cancelar prro")
+                                 .setCancelText("Cancelar")
                                  .setCancelClickListener(new SweetAlertDialog.OnSweetClickListener() {
                                      @Override
                                      public void onClick(SweetAlertDialog sweetAlertDialog) {
